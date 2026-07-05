@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover rare vinyl, vintage classics, and modern high-fidelity pressings at The Wax Journal.">
+  <title>The Wax Journal | Vintage Record Store</title>
+  
+  <!-- Central Monochromatic Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 1. Skip Navigation Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- 2. Screen Loader Overlay -->
+  <div id="page-loader" class="page-loader" aria-label="Loading page content" aria-live="polite" role="status" tabindex="-1">
+    <div class="loader-content">
+      <div class="vinyl-spinner" aria-hidden="true">
+        <div class="spinner-grooves"></div>
+        <div class="spinner-label">
+          <div class="spinner-center"></div>
+        </div>
+      </div>
+      <p class="loader-text">Loading digital catalog...</p>
+    </div>
+  </div>
+
+  <!-- 3. Main Site Container (Masked during loading stage) -->
+  <div id="site-wrapper" class="site-wrapper-loading" aria-hidden="true">
+    
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="container header-container">
+        <a href="#" class="logo" aria-label="The Wax Journal - Go to Home Page">
+          <span class="logo-accent">The</span> Wax Journal
+        </a>
+        
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-navigation" aria-label="Toggle Navigation Menu">
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-navigation" class="nav-menu" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="#featured-records" class="nav-link">New Arrivals</a></li>
+            <li><a href="#about" class="nav-link">Our Story</a></li>
+            <li><a href="#services" class="nav-link">Store Services</a></li>
+            <li><a href="#testimonials" class="nav-link">Community Voices</a></li>
+            <li><a href="#newsletter" class="nav-link">The Wax Club</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      
+      <!-- Hero Section -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="hero-badge" role="text">Est. 1974 &bull; Independent Crate Diggers</span>
+            <h1 id="hero-heading" class="hero-title">
+              Preserving the Warmth of <span class="highlight-text">Analog Sound</span>
+            </h1>
+            <p class="hero-description">
+              Step into a cozy sanctuary of rich crackles, deep bass, and timeless melodies. Explore our hand-curated archives of rare original pressings, high-fidelity classic vinyl, and modern masterpieces.
+            </p>
+            <div class="hero-actions">
+              <a href="#featured-records" class="btn btn-primary" aria-label="Browse our vintage record collection">Explore Collection</a>
+              <a href="#about" class="btn btn-secondary" aria-label="Learn about our record store story">Our Story</a>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="album-wrapper">
+              <div class="album-sleeve">
+                <div class="sleeve-art">
+                  <span class="sleeve-title">The Wax Journal</span>
+                  <span class="sleeve-subtitle">Volume IV</span>
+                </div>
+              </div>
+              <div class="vinyl-record">
+                <div class="vinyl-grooves"></div>
+                <div class="vinyl-label">
+                  <div class="vinyl-center-hole"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Records Section -->
+      <section id="featured-records" class="section-featured" aria-labelledby="featured-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tagline">Hand-Picked Selection</span>
+            <h2 id="featured-heading" class="section-title">Featured Vinyl</h2>
+            <p class="section-description">Unearth essential classics and hard-to-find original pressings, carefully evaluated by our staff.</p>
+          </div>
+
+          <!-- Dynamic Search Bar (Triggers empty state if "No data found") -->
+          <div class="search-filter-container">
+            <label for="catalog-search" class="sr-only">Search our vintage collection</label>
+            <input 
+              type="text" 
+              id="catalog-search" 
+              class="catalog-search-input" 
+              placeholder="Search by album title or artist name..." 
+              aria-label="Search catalog"
+            >
+          </div>
+
+          <div class="records-grid">
+            <!-- Card 1 -->
+            <article class="record-card" data-title="Kind of Blue" data-artist="Miles Davis">
+              <div class="card-media">
+                <div class="vinyl-disc" aria-hidden="true"></div>
+                <div class="cover-wrapper">
+                  <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&w=400&q=80" alt="Vinyl album cover representing Miles Davis' Kind of Blue" class="cover-image" loading="lazy">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="album-title">Kind of Blue</h3>
+                <p class="artist-name">Miles Davis</p>
+                <div class="card-footer">
+                  <span class="record-price">$34.99</span>
+                  <button type="button" class="btn-buy" aria-label="Add Kind of Blue by Miles Davis to cart">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="record-card" data-title="Rumours" data-artist="Fleetwood Mac">
+              <div class="card-media">
+                <div class="vinyl-disc" aria-hidden="true"></div>
+                <div class="cover-wrapper">
+                  <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=400&q=80" alt="Vinyl album cover representing Fleetwood Mac's Rumours" class="cover-image" loading="lazy">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="album-title">Rumours</h3>
+                <p class="artist-name">Fleetwood Mac</p>
+                <div class="card-footer">
+                  <span class="record-price">$29.99</span>
+                  <button type="button" class="btn-buy" aria-label="Add Rumours by Fleetwood Mac to cart">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="record-card" data-title="The Dark Side of the Moon" data-artist="Pink Floyd">
+              <div class="card-media">
+                <div class="vinyl-disc" aria-hidden="true"></div>
+                <div class="cover-wrapper">
+                  <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=400&q=80" alt="Vinyl album cover representing Pink Floyd's The Dark Side of the Moon" class="cover-image" loading="lazy">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="album-title">The Dark Side of the Moon</h3>
+                <p class="artist-name">Pink Floyd</p>
+                <div class="card-footer">
+                  <span class="record-price">$39.99</span>
+                  <button type="button" class="btn-buy" aria-label="Add The Dark Side of the Moon by Pink Floyd to cart">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="record-card" data-title="Abbey Road" data-artist="The Beatles">
+              <div class="card-media">
+                <div class="vinyl-disc" aria-hidden="true"></div>
+                <div class="cover-wrapper">
+                  <img src="https://images.unsplash.com/photo-1487180142328-0c4e37023af5?auto=format&fit=crop&w=400&q=80" alt="Vinyl album cover representing The Beatles' Abbey Road" class="cover-image" loading="lazy">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="album-title">Abbey Road</h3>
+                <p class="artist-name">The Beatles</p>
+                <div class="card-footer">
+                  <span class="record-price">$32.99</span>
+                  <button type="button" class="btn-buy" aria-label="Add Abbey Road by The Beatles to cart">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="record-card" data-title="Blue" data-artist="Joni Mitchell">
+              <div class="card-media">
+                <div class="vinyl-disc" aria-hidden="true"></div>
+                <div class="cover-wrapper">
+                  <img src="https://images.unsplash.com/photo-1498038432885-c6f3f1b912ee?auto=format&fit=crop&w=400&q=80" alt="Vinyl album cover representing Joni Mitchell's Blue" class="cover-image" loading="lazy">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="album-title">Blue</h3>
+                <p class="artist-name">Joni Mitchell</p>
+                <div class="card-footer">
+                  <span class="record-price">$28.99</span>
+                  <button type="button" class="btn-buy" aria-label="Add Blue by Joni Mitchell to cart">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="record-card" data-title="What's Going On" data-artist="Marvin Gaye">
+              <div class="card-media">
+                <div class="vinyl-disc" aria-hidden="true"></div>
+                <div class="cover-wrapper">
+                  <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=400&q=80" alt="Vinyl album cover representing Marvin Gaye's What's Going On" class="cover-image" loading="lazy">
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="album-title">What's Going On</h3>
+                <p class="artist-name">Marvin Gaye</p>
+                <div class="card-footer">
+                  <span class="record-price">$31.99</span>
+                  <button type="button" class="btn-buy" aria-label="Add What's Going On by Marvin Gaye to cart">Add to Cart</button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Empty State Module (Strict "No data found" string match requirement) -->
+          <div id="empty-state" class="empty-state-container" style="display: none;" role="region" aria-live="polite">
+            <div class="empty-state-card">
+              <div class="empty-state-visual" aria-hidden="true">
+                <svg class="empty-illustration" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" width="180" height="180">
+                  <rect x="25" y="45" width="150" height="110" rx="8" fill="#F8F9FA" stroke="#D1D1D1" stroke-width="4"/>
+                  <circle cx="90" cy="100" r="40" fill="#EAEAEA" stroke="#D1D1D1" stroke-width="3" stroke-dasharray="6 4"/>
+                  <circle cx="90" cy="100" r="6" fill="#111111"/>
+                  <path d="M145 65 L145 115 L120 130" stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="145" cy="65" r="8" fill="#666666"/>
+                  <path d="M50 75 L55 80 M55 75 L50 80" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M125 135 L130 140 M130 135 L125 140" stroke="#111111" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <h3 class="empty-state-title">No data found</h3>
+              <p class="empty-state-text">There are currently no records matching your search queries.</p>
+              <button type="button" id="reset-catalog-btn" class="btn-reset-catalog" aria-label="Reload the vinyl record list">Reload Inventory</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about" class="about-section" aria-labelledby="about-heading">
+        <div class="container about-grid">
+          <div class="about-narrative">
+            <span class="about-tagline">Since 1974</span>
+            <h2 id="about-heading" class="about-title">Keepers of the Analog Groove</h2>
+            <p class="about-lead">
+              The Wax Journal is more than a record store. It is a sanctuary for crate diggers, a community hub, and a living museum.
+            </p>
+            <p class="about-text">
+              Tucked into the historic corner of the downtown district, our dusty oak shelves carry decades of cultural history. Here, every record has a story before you even drop the needle.
+            </p>
+            <blockquote class="about-quote">
+              <p class="quote-body">"Music shouldn't just be streamed. It deserves to be held, cared for, and experienced in full fidelity."</p>
+              <cite class="quote-author">&mdash; Arthur Pendleton, Founder</cite>
+            </blockquote>
+          </div>
+
+          <div class="about-details">
+            <article class="about-card mission-card" aria-labelledby="mission-heading">
+              <h3 id="mission-heading" class="about-subheading">Our Mission</h3>
+              <p class="about-text">
+                To preserve the tactile and communal experience of analog music. We aim to protect independent music culture, provide a welcoming space for discovery, and ensure classic sounds continue to inspire listeners.
+              </p>
+            </article>
+
+            <article class="about-card history-card" aria-labelledby="history-heading">
+              <h3 id="history-heading" class="about-subheading">A Journey in Sound</h3>
+              <ol class="history-timeline" aria-label="Chronological store history timeline">
+                <li class="timeline-item">
+                  <span class="timeline-year">1974</span>
+                  <div class="timeline-content">
+                    <h4 class="timeline-title">The Basement Crates</h4>
+                    <p class="timeline-text">Arthur Pendleton opens a small underground cellar shop selling hand-cleaned soul and jazz records.</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <span class="timeline-year">1995</span>
+                  <div class="timeline-content">
+                    <h4 class="timeline-title">Defying the CD Era</h4>
+                    <p class="timeline-text">As the industry shifts entirely to digital CDs, we double down on our wax inventory, keeping vinyl alive.</p>
+                  </div>
+                </li>
+                <li class="timeline-item">
+                  <span class="timeline-year">Present</span>
+                  <div class="timeline-content">
+                    <h4 class="timeline-title">The Analog Revival</h4>
+                    <p class="timeline-text">We continue welcoming new generations of audiophiles with modern pressings and active listening nights.</p>
+                  </div>
+                </li>
+              </ol>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services-section" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tagline">What We Offer</span>
+            <h2 id="services-heading" class="section-title">Store Services</h2>
+            <p class="section-description">We support your musical journey with professional gear and curated selection.</p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                  <circle cx="12" cy="12" r="10" />
+                  <circle cx="12" cy="12" r="6" />
+                  <circle cx="12" cy="12" r="2" />
+                  <path d="M12 2a10 10 0 0 1 8 5" />
+                </svg>
+              </div>
+              <h3 class="service-card-title">Curated Collection</h3>
+              <p class="service-card-text">Browse thousands of pristine LPs spanning classic rock, jazz, soul, and modern releases.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                  <path d="M6 3h12l4 6-10 12L2 9z" />
+                  <path d="M11 3 8 9l4 12" />
+                  <path d="M13 3l3 9-4 9" />
+                  <path d="M2 9h20" />
+                </svg>
+              </div>
+              <h3 class="service-card-title">Rare Vault Finds</h3>
+              <p class="service-card-text">Get exclusive access to first-pressings, imports, and signed editions.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z" />
+                </svg>
+              </div>
+              <h3 class="service-card-title">Hi-Fi & Accessories</h3>
+              <p class="service-card-text">Maintain your groove with premium record cleaning brushes and turntable parts.</p>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon-box" aria-hidden="true">
+                <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="32" height="32">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                  <line x1="12" y1="22.08" x2="12" y2="12" />
+                </svg>
+              </div>
+              <h3 class="service-card-title">Secured Delivery</h3>
+              <p class="service-card-text">Safely receive your records with our specialized, high-durability packaging.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tagline">Community Voices</span>
+            <h2 id="testimonials-heading" class="section-title">Words From the Crates</h2>
+            <p class="section-description">What collectors and audiophiles say about us.</p>
+          </div>
+
+          <div class="testimonials-grid">
+            <article class="testimonial-card">
+              <header class="testimonial-header">
+                <div class="customer-avatar" aria-hidden="true">MV</div>
+                <div class="customer-metadata">
+                  <h3 class="customer-name">Marcus Vance</h3>
+                  <div class="customer-rating" aria-label="5 out of 5 stars">
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16">
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
+                    </svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                </div>
+              </header>
+              <blockquote class="testimonial-body">
+                <p class="testimonial-quote">"I managed to unearth a pristine 1978 original pressing of a rare Japanese fusion jazz album I'd been chasing down online for years."</p>
+              </blockquote>
+            </article>
+
+            <article class="testimonial-card">
+              <header class="testimonial-header">
+                <div class="customer-avatar avatar-dark" aria-hidden="true">ER</div>
+                <div class="customer-metadata">
+                  <h3 class="customer-name">Elena Rostova</h3>
+                  <div class="customer-rating" aria-label="5 out of 5 stars">
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                </div>
+              </header>
+              <blockquote class="testimonial-body">
+                <p class="testimonial-quote">"What a beautiful space. Gently lowering the tone-arm at their cozy listening station was a highlight."</p>
+              </blockquote>
+            </article>
+
+            <article class="testimonial-card">
+              <header class="testimonial-header">
+                <div class="customer-avatar avatar-darker" aria-hidden="true">JK</div>
+                <div class="customer-metadata">
+                  <h3 class="customer-name">Julian Kincaid</h3>
+                  <div class="customer-rating" aria-label="5 out of 5 stars">
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                    <svg class="star-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="16" height="16"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+                  </div>
+                </div>
+              </header>
+              <blockquote class="testimonial-body">
+                <p class="testimonial-quote">"The cleaning accessories and anti-static inner sleeves completely transformed my listening set-up."</p>
+              </blockquote>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section id="newsletter" class="newsletter-section" aria-labelledby="newsletter-heading">
+        <div class="container newsletter-container">
+          <div class="newsletter-info">
+            <span class="newsletter-tagline">The Inner Circle</span>
+            <h2 id="newsletter-heading" class="newsletter-title">Join The Wax Club</h2>
+            <p class="newsletter-text">
+              Get weekly updates on rare vinyl restocks, in-store listening sessions, and private sales.
+            </p>
+          </div>
+
+          <div class="newsletter-form-wrapper">
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+              <div id="form-success" class="form-success" role="alert" aria-live="polite"></div>
+
+              <div class="form-group">
+                <label for="subscriber-name" class="form-label">First Name <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="subscriber-name" name="name" class="form-input" placeholder="e.g. Eleanor" required aria-describedby="name-error">
+                <span id="name-error" class="form-error-message" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subscriber-email" class="form-label">Email Address <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="subscriber-email" name="email" class="form-input" placeholder="eleanor@analog.com" required aria-describedby="email-error">
+                <span id="email-error" class="form-error-message" role="alert"></span>
+              </div>
+
+              <button type="submit" class="btn-submit">Subscribe to Mailer</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo" aria-label="The Wax Journal Home">
+            <span class="logo-accent">The</span> Wax Journal
+          </a>
+          <p class="footer-tagline">
+            Preserving the warmth of analog grooves since 1974. Hand-cleaning, cataloging, and shipping classic vinyl globally.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Quick Links">
+          <h3 class="footer-heading">Crate Directory</h3>
+          <ul class="footer-links-list">
+            <li><a href="#featured-records" class="footer-link">Featured Vinyl</a></li>
+            <li><a href="#about" class="footer-link">Our Story</a></li>
+            <li><a href="#services" class="footer-link">Store Services</a></li>
+            <li><a href="#testimonials" class="footer-link">Community Voices</a></li>
+            <li><a href="#newsletter" class="footer-link">The Wax Club</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-contact">
+          <h3 class="footer-heading">Visit the Store</h3>
+          <address class="footer-address">
+            <p class="address-line">104 Analog Lane, Groove District</p>
+            <p class="address-line">San Francisco, CA 94103</p>
+            <p class="contact-method">
+              <span class="contact-label">Call:</span> 
+              <a href="tel:+14155550199" class="footer-link" aria-label="Call us at 415-555-0199">(415) 555-0199</a>
+            </p>
+            <p class="contact-method">
+              <span class="contact-label">Email:</span> 
+              <a href="mailto:hello@waxjournal.com" class="footer-link">hello@waxjournal.com</a>
+            </p>
+          </address>
+        </div>
+
+        <div class="footer-social">
+          <h3 class="footer-heading">Follow the Groove</h3>
+          <p class="social-text">Tune in for restock alerts, listening sessions, and community posts.</p>
+          <ul class="social-links-list" aria-label="Social media connections">
+            <li>
+              <a href="https://instagram.com" class="social-icon-link" target="_blank" rel="noopener" aria-label="Instagram">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://facebook.com" class="social-icon-link" target="_blank" rel="noopener" aria-label="Facebook">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://youtube.com" class="social-icon-link" target="_blank" rel="noopener" aria-label="YouTube">
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" />
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container bottom-container">
+          <p class="footer-copyright">
+            &copy; <span id="current-year">2026</span> The Wax Journal. Built for the analog heart.
+          </p>
+          <ul class="footer-legal-links">
+            <li><a href="#privacy" class="footer-link">Privacy Policy</a></li>
+            <li><a href="#terms" class="footer-link">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Main JavaScript Controller -->
+  <script src="js/main.js" defer></script>
+  <!-- Non-essential Tracking analytics modules -->
+  <script src="js/analytics.js" defer></script>
+</body>
+</html>
